@@ -1,0 +1,18 @@
+{
+  "name": "@api-boilerplate-core/seo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@api-boilerplate-core/i18n-shared": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/i18n-shared"
+  },
+  "peerDependencies": {
+    "next": ">=13"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

@@ -1,0 +1,27 @@
+import { parseFlag } from "@api-boilerplate-core/env";
+
+export type FeatureFlags<T extends Record<string, boolean>> = Readonly<T>;
+
+export function createFeatureFlags<T extends Record<string, boolean>>(
+  defaults: T,
+  overrides?: Partial<T>
+): FeatureFlags<T> {
+  return { ...defaults, ...overrides } as FeatureFlags<T>;
+}
+
+export function resolveFeatureFlags<T extends Record<string, boolean>>(
+  defaults: T,
+  env?: Partial<Record<keyof T, string | undefined>>,
+  overrides?: Partial<T>
+): FeatureFlags<T> {
+  const parsed: Partial<T> = {};
+  if (env) {
+    for (const key of Object.keys(defaults) as Array<keyof T>) {
+      if (key in env) {
+        const fallback = defaults[key] ?? false;
+        parsed[key] = parseFlag(env[key], fallback) as T[typeof key];
+      }
+    }
+  }
+  return createFeatureFlags(defaults, { ...parsed, ...overrides });
+}

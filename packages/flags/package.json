@@ -1,0 +1,15 @@
+{
+  "name": "@api-boilerplate-core/flags",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@api-boilerplate-core/env": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/env"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

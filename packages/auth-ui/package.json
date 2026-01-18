@@ -1,0 +1,24 @@
+{
+  "name": "@api-boilerplate-core/auth-ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@api-boilerplate-core/auth": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/auth"
+  },
+  "peerDependencies": {
+    "@clerk/nextjs": ">=4",
+    "@clerk/themes": ">=2",
+    "next": ">=13",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "exports": {
+    ".": "./src/index.tsx",
+    "./server": "./src/server.ts",
+    "./middleware": "./src/middleware.ts"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@api-boilerplate-core/layouts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@api-boilerplate-core/i18n-shared": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/i18n-shared",
+    "@api-boilerplate-core/ui": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/ui"
+  },
+  "peerDependencies": {
+    "next": ">=13",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./app-shell": "./src/app-shell.tsx",
+    "./auth-shell": "./src/auth-shell.tsx",
+    "./dashboard-shell": "./src/dashboard-shell.tsx",
+    "./dashboard-page": "./src/dashboard-page.tsx",
+    "./back-nav": "./src/back-nav.tsx",
+    "./detail-grid": "./src/detail-grid.tsx",
+    "./empty-state": "./src/empty-state.tsx",
+    "./entity-detail-page": "./src/entity-detail-page.tsx",
+    "./entity-form-page": "./src/entity-form-page.tsx",
+    "./entity-list-page": "./src/entity-list-page.tsx",
+    "./info-page": "./src/info-page.tsx",
+    "./list-state": "./src/list-state.tsx",
+    "./marketing-page": "./src/marketing-page.tsx",
+    "./section-block": "./src/section-block.tsx",
+    "./site-footer": "./src/site-footer.tsx",
+    "./site-header": "./src/site-header.tsx",
+    "./status-text": "./src/status-text.tsx",
+    "./system-page": "./src/system-page.tsx"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

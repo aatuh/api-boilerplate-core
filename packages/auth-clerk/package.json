@@ -1,0 +1,28 @@
+{
+  "name": "@api-boilerplate-core/auth-clerk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@api-boilerplate-core/auth": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/auth",
+    "@api-boilerplate-core/auth-ui": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/auth-ui",
+    "@api-boilerplate-core/clerk": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/clerk",
+    "@api-boilerplate-core/theme": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/theme",
+    "@clerk/localizations": ">=3",
+    "@clerk/nextjs": ">=4",
+    "@clerk/themes": ">=2"
+  },
+  "peerDependencies": {
+    "next": ">=13",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "exports": {
+    ".": "./src/index.tsx",
+    "./server": "./src/server.ts",
+    "./middleware": "./src/middleware.ts"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

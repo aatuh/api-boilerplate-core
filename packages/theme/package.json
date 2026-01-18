@@ -1,0 +1,16 @@
+{
+  "name": "@api-boilerplate-core/theme",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./theme-context": "./src/theme-context.tsx"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

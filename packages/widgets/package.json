@@ -1,0 +1,28 @@
+{
+  "name": "@api-boilerplate-core/widgets",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@api-boilerplate-core/i18n-shared": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/i18n-shared",
+    "@api-boilerplate-core/legal": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/legal",
+    "@api-boilerplate-core/theme": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/theme",
+    "@api-boilerplate-core/ui": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/ui"
+  },
+  "peerDependencies": {
+    "lucide-react": ">=0.0.0",
+    "next": ">=13",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./language-switcher": "./src/language-switcher.tsx",
+    "./theme-switcher": "./src/theme-switcher.tsx",
+    "./theme-variant-switcher": "./src/theme-variant-switcher.tsx",
+    "./cookie-consent": "./src/cookie-consent.tsx"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

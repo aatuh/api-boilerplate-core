@@ -1,0 +1,21 @@
+{
+  "name": "@api-boilerplate-core/analytics",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@api-boilerplate-core/env": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/env",
+    "zod": "^4.1.11",
+    "react": "^19.2.3"
+  },
+  "peerDependencies": {
+    "next": ">=13",
+    "react": ">=18"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

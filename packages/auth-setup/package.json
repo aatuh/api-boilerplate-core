@@ -1,0 +1,20 @@
+{
+  "name": "@api-boilerplate-core/auth-setup",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@api-boilerplate-core/auth-ui": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/auth-ui"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts",
+    "./server": "./src/server.ts"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

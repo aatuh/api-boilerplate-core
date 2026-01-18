@@ -1,0 +1,22 @@
+{
+  "name": "@api-boilerplate-core/analytics-umami",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@api-boilerplate-core/analytics": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/analytics",
+    "@api-boilerplate-core/env": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/env",
+    "@api-boilerplate-core/legal": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/legal",
+    "@api-boilerplate-core/widgets": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/widgets",
+    "zod": "^4.1.11"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@api-boilerplate-core/legal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@api-boilerplate-core/layouts": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/layouts",
+    "@api-boilerplate-core/ui": "https://github.com/aatuh/api-boilerplate-core.git#path:/packages/ui"
+  },
+  "peerDependencies": {
+    "next": ">=13",
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./types": "./src/types.ts",
+    "./merge": "./src/merge.ts",
+    "./page": "./src/legal-page.tsx",
+    "./consent": "./src/consent.ts"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}
